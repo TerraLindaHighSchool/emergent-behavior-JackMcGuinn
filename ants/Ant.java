@@ -12,7 +12,7 @@ public class Ant extends Creature
     private GreenfootImage image1;
     private GreenfootImage image2;
     private final int MAX_PH_AVAILABLE = 16;
-    private final int TIME_FOLLOWING_TRAIL = 30;
+    private final int TIME_FOLLOWING_TRIAL = 30;
     private int phAvailable = MAX_PH_AVAILABLE;
     private int followTrialTimeRemaining = 0;
     /**
