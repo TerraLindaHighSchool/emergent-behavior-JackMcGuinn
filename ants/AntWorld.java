@@ -44,4 +44,11 @@ public class AntWorld extends World
         Food food6 = new Food();
         addObject(food6,227,134);
     }
+    public void act()
+    {
+      if(getObjects(Food.class).size() == 0 && (getObjects(Pheromone.class).size() == 0))
+        {
+              Greenfoot.stop();
+        }
+    }
 }
