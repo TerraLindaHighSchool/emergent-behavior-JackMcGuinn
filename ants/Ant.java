@@ -57,7 +57,22 @@ public class Ant extends Creature
     }
     private void searchForFood()
     {
-        randomWalk();
+        if(followTrialTimeRemaining == 0)
+        {
+            if(smellsPheromone())
+            {
+                walkTowardsPheromoneCenter();
+            }
+            else
+            {
+                randomWalk();
+            }
+        }
+        else
+        {
+            followTrialTimeRemaining--;
+            walkAwayFromHome();
+        }
         checkForFood();
     }
     private void status()
