@@ -29,8 +29,10 @@ public class MyWorld extends World
     {
         Jetpack jetpack = new Jetpack();
         addObject(jetpack,76,320);
-        
+
+        jetpack.setLocation(70,213);
     }
+
     public void act()
 
     {
